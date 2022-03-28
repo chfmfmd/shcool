@@ -68,7 +68,7 @@ for x in range(3):
     if max_score < student_scores[x][y]:
        max_score = student_scores[x][y]
        loc_x, loc_y = x , y
-       print("{}번 쨰 학생의 점수 {}".format(loc_y, student_scores[loc_x]))
+       print("{}번 쨰 학생의 점수 {}".format(loc_y+1, student_scores[loc_x]))
 
 
 list1 = ["a", "b", "c"]
