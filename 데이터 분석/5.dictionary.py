@@ -82,4 +82,9 @@ strings = ["java", "python", "a", "bb", "aacd", "father", "mm", "oh", "ccc", "dd
 dic = {}
 print(s)
 print(len(strings[0:]))
+word_max =0
 
+for i in range(len(strings)):
+    if word_max <= len(strings[i]):
+        word_max = len(strings[i])
+print(word_max)
