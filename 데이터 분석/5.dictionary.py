@@ -78,13 +78,17 @@ for key, value in class_dic.items():
     print("{}점 이상을 {}명 입니다".format(key, len(value)))
 
 
-strings = ["java", "python", "a", "bb", "aacd", "father", "mm", "oh", "ccc", "ddd", "c"] #글자수 만큼 딕셔너리 키 만들고 그 글자수 키값에 단어 넣기
+strings = ["java", "python", "a", "bb", "aacd", "father", "mm", "oh", "ccc", "ddddd", "c"]
+x = []
+for i in strings:
+    mean = len(i)
+    x.append(mean)
 dic = {}
-print(s)
-print(len(strings[0:]))
-word_max =0
-
-for i in range(len(strings)):
-    if word_max <= len(strings[i]):
-        word_max = len(strings[i])
-print(word_max)
+for key, value in zip(x, strings):
+    if key in dic:
+        dic[key].append(value)
+    else:
+        temp = list()
+        temp.append(value)
+        dic[key] = temp
+print(dic)
