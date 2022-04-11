@@ -45,3 +45,5 @@ for word in strings:
         c_list.append(word)
 print(c_list)
 
+# 단어 20개를 A list로 만들고 앞자리 별로 딕셔너리 사용해서 정리하고 다음주까지 제출하기 
+
