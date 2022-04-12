@@ -45,5 +45,20 @@ for word in strings:
         c_list.append(word)
 print(c_list)
 
-# 단어 20개를 A list로 만들고 앞자리 별로 딕셔너리 사용해서 정리하고 다음주까지 제출하기 
+# 단어 시작이 같은 문자인 단어 딕셔너리 분류
 # 예시 A : [Apple. animal] B:[Banna,bug]
+word = ["shop", "very", "often", "prize", "fix", "judge", "together", "sentence", "knowledge", "sure", "only",
+        "dangerous", "short", "contest", "homeroom", "apple", "wise", "worry", "about", "finally", "pizza"]
+x = []
+for i in word:
+     y = i[0]
+     x.append(y)
+dic = {}
+for key, value in zip(x, word):
+    if key in dic:
+        dic[key].append(value)
+    else:
+        temp = list()
+        temp.append(value)
+        dic[key] = temp
+print(dic)
