@@ -72,3 +72,7 @@ print(np.sum(data[data["store"] == "tokyo"]["sales"]))
 blue = np.sum(data[data["color"] == "blue"]["sales"])
 red = np.sum(data[data["color"] == "red"]["sales"])
 print("파란색 : {}  빨간색 : {} ".format(blue,red))
+
+
+color_sales = data.groupby(by="color")
+print(color_sales.sum())
